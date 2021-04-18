@@ -29,7 +29,7 @@ public class Produto  implements Serializable {
 	private String nome;
 	private Double preco;
 
-	@JsonBackReference
+	@JsonIgnore
 	@ManyToMany
 	@JoinTable(name = "PRODUTO_CATEGORIA",
 		joinColumns = @JoinColumn(name = "produto_id"),
@@ -93,12 +93,12 @@ public class Produto  implements Serializable {
 		this.categorias = categorias;
 	}
 
-	public Set<ItemPedido> getItems() {
+	public Set<ItemPedido> getItens() {
 		return itens;
 	}
 
-	public void setItems(Set<ItemPedido> items) {
-		this.itens = items;
+	public void setItens(Set<ItemPedido> itens) {
+		this.itens = itens;
 	}
 	
 
