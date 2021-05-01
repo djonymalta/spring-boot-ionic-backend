@@ -62,6 +62,14 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.heroku.sdk/heroku-maven-plugin -->
+		<dependency>
+			<groupId>com.heroku.sdk</groupId>
+			<artifactId>heroku-maven-plugin</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>com.github.damianwajser</groupId>
 			<artifactId>spring-commons-rest-validation</artifactId>
@@ -77,6 +85,12 @@
 
 	<build>
 		<plugins>
+
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>2.0.8</version>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
