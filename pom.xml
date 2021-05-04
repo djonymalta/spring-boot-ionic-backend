@@ -77,10 +77,16 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>org.fastquery</groupId>
 			<artifactId>df2o</artifactId>
 			<version>1.0</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
